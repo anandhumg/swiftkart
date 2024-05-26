@@ -1,0 +1,21 @@
+body{
+    background-color: #eceff3;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px 40px 20px
+}
+.addButton{
+    background-color: #635bff;
+    border-radius: 12px;
+    padding: 8px 20px;
+    height: 45px;
+    color: white;
+}
+.searchBox{
+    height: 60px;
+    width: 70%;
+    border-radius: 12px;
+    border: 0.5px solid gray
+}
