@@ -1,5 +1,5 @@
 import { Table } from 'react-bootstrap';
-import styles from './customer.module.css';
+import './customer.css'
 export const ViewAllCustomers = () => {
     const tableData = [
         {
@@ -40,7 +40,7 @@ export const ViewAllCustomers = () => {
     ]
     return (
         <div style={{ padding: '20px' }}>
-            <div className={styles.header}>
+            <div className='customerheader'>
                 <div>
                     <div style={{ fontSize: '2rem', fontWeight: 500 }}>
                         Customers
@@ -54,7 +54,7 @@ export const ViewAllCustomers = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.addButton}>
+                <div className='addButton'>
                     + Add
                 </div>
             </div>
@@ -67,7 +67,7 @@ export const ViewAllCustomers = () => {
                 alignItems: 'center',
                 padding: '30px'
             }}>
-                <input className={styles.searchBox} placeholder='       search customer' />
+                <input className='searchBox' placeholder='       search customer' />
             </div>
             <div style={{ marginTop: '30px', overflow: 'scroll' }}>
                 <div style={{ backgroundColor: 'white', padding: '10px', borderRadius: '12px', minWidth: '72rem' }}>

@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import styles from './overview.module.css'
-import { Badge } from 'react-bootstrap'
+import './overview.css'
 
 export const AdminOverview = () => {
     const [priceStatus, setPriceStatus] = useState(false);
@@ -31,9 +30,9 @@ export const AdminOverview = () => {
         }
     ]
     return (
-        <div className={styles.container}>
-            <div className={styles.cards}>
-                <div className={styles.card}>
+        <div className='overview-container'>
+            <div className='over-cards'>
+                <div className='over-card'>
                     <div>
                         <div>
                             Budget
@@ -63,7 +62,7 @@ export const AdminOverview = () => {
                         $
                     </div>
                 </div>
-                <div className={styles.card}>
+                <div className='over-card'>
                     <div>
                         <div>
                             Budget
@@ -93,7 +92,7 @@ export const AdminOverview = () => {
                         $
                     </div>
                 </div>
-                <div className={styles.card}>
+                <div className='over-card'>
                     <div>
                         <div>
                             Budget
@@ -123,7 +122,7 @@ export const AdminOverview = () => {
                         $
                     </div>
                 </div>
-                <div className={styles.card}>
+                <div className='over-card'>
                     <div>
                         <div>
                             Budget
@@ -154,8 +153,8 @@ export const AdminOverview = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.report}>
-                <div className={styles.statusBarContainer}>
+            <div className='over-report'>
+                <div className='statusBarContainer'>
                     <div style={{ display: 'flex', justifyContent: 'space-between', padding: '30px' }}>
                         <div style={{ fontSize: '1.125rem', fontWeight: 500 }}>
                             Sales
@@ -183,7 +182,7 @@ export const AdminOverview = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.circularStatusBarContainer}>
+                <div className='circularStatusBarContainer'>
                     <div style={{ fontSize: '1.125rem', fontWeight: 500 }}>
                         Traffic Source
                     </div>
@@ -223,8 +222,8 @@ export const AdminOverview = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.tables}>
-                <div className={styles.list}>
+            <div className='over-tables'>
+                <div className='over-list'>
                     <div style={{ borderBottom: '0.5px solid gray', padding: '20px', fontSize: '1.125rem' }}>
                         Latest Products
                     </div>
@@ -307,7 +306,7 @@ export const AdminOverview = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.table}>
+                <div className='over-table'>
                     <div style={{ minWidth: '54rem' }}>
                         <div style={{ borderBottom: '0.5px solid gray', fontSize: '1.125rem', padding: '30px' }}>
                             Latest orders
@@ -340,13 +339,13 @@ export const AdminOverview = () => {
                                             {data.date}
                                         </div>
                                         <div>
-                                            {data.status == 'pending' ? <span className={styles.badge} style={{ backgroundColor: 'yellow' }}>
+                                            {data.status == 'pending' ? <span className='over-badge' style={{ backgroundColor: 'yellow' }}>
                                                 Pending
                                             </span> : ''}
-                                            {data.status == 'delivered' ? <span className={styles.badge} style={{ backgroundColor: 'green',color:'white' }}>
+                                            {data.status == 'delivered' ? <span className='over-badge' style={{ backgroundColor: 'green',color:'white' }}>
                                                 Delivered
                                             </span> : ''}
-                                            {data.status == 'refunded' ? <span className={styles.badge} style={{ backgroundColor: 'red',color:'white'}}>
+                                            {data.status == 'refunded' ? <span className='over-badge' style={{ backgroundColor: 'red',color:'white'}}>
                                                 Refunded
                                             </span> : ''}
                                         </div>

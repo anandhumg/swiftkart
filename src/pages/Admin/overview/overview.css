@@ -1,4 +1,4 @@
-.card {
+.over-card {
     display: flex;
     padding: 32px 24px;
     border-radius: 10px;
@@ -7,14 +7,14 @@
     justify-content: space-between;
 }
 
-.container {
+.overview-container {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 64px;
     overflow: scroll;
 }
 
-.cards {
+.over-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -25,7 +25,7 @@ body {
     background-color: #eceff3;
 }
 
-.report {
+.over-report {
     margin-top: 20px;
     display: flex;
     gap: 20px
@@ -48,13 +48,13 @@ body {
     padding: 20px;
 }
 
-.tables {
+.over-tables {
     margin-top: 20px;
     display: flex;
     gap: 20px
 }
 
-.list {
+.over-list {
     flex: 0 0 30%;
     height: 500px;
     border-radius: 10px;
@@ -62,7 +62,7 @@ body {
     background-color: white;
 }
 
-.table {
+.over-table {
     flex: 1;
     height: 500px;
     border-radius: 10px;
@@ -71,7 +71,7 @@ body {
     overflow: scroll;
 }
 
-.badge {
+.over-badge {
     padding: 2px 14px;
     border-radius: 12px;
     font-weight: 500;
